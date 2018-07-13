@@ -1,0 +1,26 @@
+.heading{
+    position: absolute;
+    top:0;
+    padding-top:2% ;
+    left: 0;
+    width: 100vw;
+    height: 12rem;
+    background: darkviolet;
+}
+.otherThanHeading{
+    position: absolute;
+    top: 12rem;
+    bottom:0;
+
+}
+.sidebar{
+    background-color:rgb(107, 0, 153)
+}
+.mainPage{
+    background-color:rgb(107, 0, 130)    
+}
+h1{
+    font-size: 1.5rem;
+    color: white;
+    margin:2%;
+}

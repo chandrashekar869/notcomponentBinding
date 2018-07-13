@@ -1,0 +1,4 @@
+<h2 class="heading">Trending Frameworks</h2>
+<div class="indList" *ngFor='let name of JavascriptFrameworks'>
+<h3 [class.whiteText]="true" (click)="clicked(name)" style="padding:2%;">{{name}}</h3>
+</div>

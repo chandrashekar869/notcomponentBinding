@@ -1,0 +1,28 @@
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+<!--<input [(ngModel)]='title' name="User name"/>-->
+<div class='heading'>
+    <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    <h1 >{{title}}</h1>
+</div>
+<div class="container-fluid otherThanHeading">
+  <div class="row" style="height:100%;">
+    <div  class="col-4 sidebar">
+        <app-nav-list [techlist]="techListFromAppComponent" (clickedTech)='listenToEvent($event)'></app-nav-list>
+      <!-- <h1 style='text-align: left ;'> Lorem </h1><br />
+      <input [(ngModel)]="inputData" (input)="twoWayBinding()" (focus)="setData($event)" (blur)="resetData()" style='width:100%; padding:1%;' [disabled]='disableSideBar()'  name="User name"/>
+      <button style="margin:1%;" class="btn btn-sm btn-primary" (click)="onButtonClick()">Hide Text</button>
+      <p style="text-align: left;color:white;">Data entered by user <br />{{inputData}}</p>
+    --></div>
+    <div  [hidden]="hideSideBar()" class="col-8 mainPage">
+     <app-main-display #mainPage></app-main-display >
+      <!--  <h1 style='text-align: left ;'> Ipsum </h1>
+        <p id="mainText" style='padding:1%;color:lightgray;'  [innerText]="injectTextIntoMainPage()" > Article2 </p>
+      --></div>
+  </div>
+</div>
+</div>
+
+
